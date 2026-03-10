@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Silué Kolotcholoma — Profil</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="silue.css">
+</head>
+
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div id="particles"></div>
+
+<div class="toast" id="toast">
+<span class="toast-icon">🔓</span>
+<span class="toast-msg" id="toastMsg">Demande acceptée !</span>
+</div>
+
+<nav>
+<div class="nav-logo">SK.</div>
+<ul class="nav-links">
+<li><a href="#about">À propos</a></li>
+<li><a href="#interests">Intérêts</a></li>
+<li><a href="#social">Réseaux</a></li>
+<li><a href="#contact">Me contacter</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+
+<div class="avatar-wrapper">
+<div class="avatar-ring">
+<div class="avatar-inner">🧑🏿‍💻</div>
+</div>
+<div class="online-badge"></div>
+</div>
+
+<p class="hero-tag">✦ Profil Personnel ✦</p>
+
+<h1 class="hero-name">
+Silué<br>Kolotcholoma
+</h1>
+
+<p class="hero-subtitle">
+Étudiant en IDA · 1ère Année
+</p>
+
+<p class="hero-desc">
+Passionné de technologie, curieux de nature, ouvert aux belles rencontres.<br>
+Je construis mon avenir ligne par ligne. 🚀
+</p>
+
+<div class="hero-stats">
+
+<div class="stat">
+<div class="stat-num" id="visitorCount">0</div>
+<div class="stat-label">Visiteurs</div>
+</div>
+
+<div class="stat">
+<div class="stat-num" id="acceptedCount">0</div>
+<div class="stat-label">Acceptés</div>
+</div>
+
+<div class="stat">
+<div class="stat-num">1re</div>
+<div class="stat-label">Année IDA</div>
+</div>
+
+</div>
+
+<div class="cta-buttons">
+<button class="btn-primary" onclick="scrollToContact()">💬 Me contacter</button>
+<button class="btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">En savoir plus</button>
+</div>
+
+</div>
+
+<div class="glow-line"></div>
+
+<section id="about">
+
+<p class="section-label">✦ Qui suis-je ?</p>
+<h2 class="section-title">À Propos</h2>
+
+<div class="about-grid">
+
+<div class="about-visual">
+<span class="about-emoji">🧑🏿‍💻</span>
+</div>
+
+<div class="about-info">
+
+<div class="info-row">
+<span class="info-icon">👤</span>
+<div>
+<div class="info-label">Nom complet</div>
+<div class="info-value">Silué Kolotcholoma</div>
+</div>
+</div>
+
+<div class="info-row">
+<span class="info-icon">🎓</span>
+<div>
+<div class="info-label">Formation</div>
+<div class="info-value">IDA — 1ère Année</div>
+</div>
+</div>
+
+<div class="info-row">
+<span class="info-icon">🌍</span>
+<div>
+<div class="info-label">Pays</div>
+<div class="info-value">Côte d'Ivoire 🇨🇮</div>
+</div>
+</div>
+
+<div class="info-row">
+<span class="info-icon">💼</span>
+<div>
+<div class="info-label">Statut</div>
+<div class="info-value">Étudiant · Disponible</div>
+</div>
+</div>
+
+<div class="info-row">
+<span class="info-icon">🌐</span>
+<div>
+<div class="info-label">WhatsApp Public</div>
+<div class="info-value">+225 05 03 80 67 81</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<div class="divider"></div>
+
+<section id="interests">
+
+<p class="section-label">✦ Ce qui me passionne</p>
+<h2 class="section-title">Centres d'intérêt</h2>
+
+<div class="interests-grid">
+
+<div class="interest-card">
+<span class="interest-emoji">💻</span>
+<div class="interest-name">Informatique</div>
+<div class="interest-desc">Dev, algo, réseaux</div>
+</div>
+
+<div class="interest-card">
+<span class="interest-emoji">🎵</span>
+<div class="interest-name">Musique</div>
+<div class="interest-desc">Afrobeat, rap, chill</div>
+</div>
+
+<div class="interest-card">
+<span class="interest-emoji">⚽</span>
+<div class="interest-name">Football</div>
+<div class="interest-desc">Jouer & regarder</div>
+</div>
+
+<div class="interest-card">
+<span class="interest-emoji">📚</span>
+<div class="interest-name">Lecture</div>
+<div class="interest-desc">Tech & développement perso</div>
+</div>
+
+<div class="interest-card">
+<span class="interest-emoji">🎮</span>
+<div class="interest-name">Gaming</div>
+<div class="interest-desc">Compétitif & détente</div>
+</div>
+
+<div class="interest-card">
+<span class="interest-emoji">🚀</span>
+<div class="interest-name">Entrepreneuriat</div>
+<div class="interest-desc">Projets & innovation</div>
+</div>
+
+</div>
+</section>
+
+<div class="glow-line"></div>
+
+<div class="form-section" id="contact">
+
+<div class="form-inner">
+
+<div class="visitor-counter">
+<div class="counter-dot"></div>
+<span id="liveCount">0</span> visiteur(s) en attente
+</div>
+
+<p class="section-label" style="text-align:center">✦ Laisse ta trace</p>
+
+<h2 class="section-title">Visiteur, présente-toi !</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+<label>Prénom *</label>
+<input type="text" id="f-firstname">
+</div>
+
+<div class="form-group">
+<label>Nom *</label>
+<input type="text" id="f-lastname">
+</div>
+
+<div class="form-group full">
+<label>Message</label>
+<textarea id="f-message"></textarea>
+</div>
+
+</div>
+
+<button class="submit-btn" onclick="submitVisitor()">
+🚀 Envoyer ma demande de contact
+</button>
+
+</div>
+
+<div class="private-panel" id="privatePanel">
+Infos privées révélées 🔓
+</div>
+
+</div>
+
+<footer>
+<p>Fait avec ❤️ par <span>Silué Kolotcholoma</span></p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
